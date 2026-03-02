@@ -1,0 +1,215 @@
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial Rounded MT Bold', sans-serif;
+    background-color: #fff;
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+/* HEADER */
+.main-header {
+  background-color: #8224e3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  flex-wrap: nowrap;
+  min-height: 100px;
+}
+
+.logo-title {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  height: 80px; /* Adjusted for desktop */
+  margin-right: 15px;
+  background-color: white;
+  padding: 5px;
+  border-radius: 100px;
+}
+
+.main-title {
+  font-family: 'Fredoka One', cursive;
+  font-size: 40px; /* Adjusted for desktop */
+  color: #ffeb3b;
+  line-height: 1.1;
+}
+
+.sub-title {
+  font-size: 18px;
+  color: white;
+}
+
+/* NAVIGATION */
+.main-nav {
+  margin-top: 0;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.main-nav a {
+  color: white;
+  font-weight: 500;
+  padding: 12px 20px;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+  background-color: #ffeb3b;
+  color: #4b0082;
+}
+  
+  /* SECTION TITLE */
+  .section-title {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #4b0082;
+    font-family: 'Fredoka One', cursive;
+    text-align: center;
+  }
+  
+  /* ABOUT US SECTION */
+  .about-section {
+    padding: 60px 20px 40px;
+    text-align: center;
+  }
+  
+  .about-vision {
+    font-size: 20px;
+    color: #333;
+    font-family: 'Arial Rounded MT Bold', sans-serif;
+    margin-top: 0;
+  }
+  
+  .about-vision h3 {
+    font-size: 28px;
+    color: #4b0082;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    text-decoration: underline;
+  }
+  
+  .about-vision ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 20px;
+  }
+  
+  .about-vision li {
+    font-size: 18px;
+    margin: 8px 0;
+    color: #333;
+  }
+  
+  /* TEAM SECTION */
+  .team-section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #fef6ff;
+  }
+  
+  .team-description {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 18px;
+    color: #333;
+    font-family: 'Arial Rounded MT Bold', sans-serif;
+    line-height: 1.6;
+    padding: 0 15px;
+  }
+  
+  .team-description ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 20px;
+  }
+  
+  .team-description li {
+    margin: 10px 0;
+    font-size: 18px;
+  }
+  
+  .team-description li::before {
+    content: '🌟';
+    margin-right: 8px;
+    color: #8224e3;
+  }
+  
+  /* ANIMATIONS */
+  .fadeInUp {
+    animation: fadeInUp 1s ease-out;
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* FOOTER */
+  footer {
+    background-color: #6a1b9a;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+  }
+  
+  /* RESPONSIVE */
+  @media (max-width: 768px) {
+    .program-box {
+      width: 90%;
+    }
+  
+    .main-title {
+      font-size: 48px;
+      text-align: center;
+    }
+  
+    .sub-title {
+      font-size: 24px;
+      text-align: center;
+    }
+  
+    .logo-img {
+      height: 100px;
+    }
+  
+    .main-nav ul {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+  

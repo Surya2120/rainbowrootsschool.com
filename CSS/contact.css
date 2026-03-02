@@ -1,0 +1,252 @@
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial Rounded MT Bold', sans-serif;
+    background-color: #fff;
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+/* HEADER */
+.main-header {
+  background-color: #8224e3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  flex-wrap: nowrap;
+  min-height: 100px;
+}
+
+.logo-title {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  height: 80px; /* Adjusted for desktop */
+  margin-right: 15px;
+  background-color: white;
+  padding: 5px;
+  border-radius: 100px;
+}
+
+.main-title {
+  font-family: 'Fredoka One', cursive;
+  font-size: 40px; /* Adjusted for desktop */
+  color: #ffeb3b;
+  line-height: 1.1;
+}
+
+.sub-title {
+  font-size: 18px;
+  color: white;
+}
+
+/* NAVIGATION */
+.main-nav {
+  margin-top: 0;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.main-nav a {
+  color: white;
+  font-weight: 500;
+  padding: 12px 20px;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+  background-color: #ffeb3b;
+  color: #4b0082;
+}
+
+
+
+/* CONTACT PAGE STYLES */
+
+body {
+    font-family: 'Arial Rounded MT Bold', sans-serif;
+    background-color: #fff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+  
+  .contact-section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #fef6ff;
+  }
+  
+  .section-title {
+    font-size: 32px;
+    color: #4b0082;
+    font-family: 'Fredoka One', cursive;
+    margin-bottom: 10px;
+  }
+  
+  .section-subtitle {
+    font-size: 20px;
+    margin-bottom: 40px;
+    color: #666;
+  }
+  
+  /* Contact Info & Map Layout */
+  .contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1100px;
+    margin: 0 auto 60px;
+  }
+  
+  .contact-details {
+    max-width: 500px;
+    text-align: left;
+    font-size: 18px;
+    color: #333;
+    line-height: 1.8;
+  }
+  
+  .contact-details p {
+    margin-bottom: 15px;
+  }
+  
+  .contact-details a {
+    color: #8224e3;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .contact-details a:hover {
+    text-decoration: underline;
+  }
+  
+  .map-box {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio (9 / 16 = 0.5625) */
+    height: 0;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    margin: 0 auto;
+  }
+
+
+  .map-box iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 8px;
+  }
+  
+  /* Form Box */
+  .form-box {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #fff0ff;
+    border-radius: 12px;
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  }
+  
+  .form-box h3 {
+    font-size: 26px;
+    color: #4b0082;
+    margin-bottom: 10px;
+  }
+  
+  .form-box p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .form-box iframe {
+    width: 100%;
+    height: 980px;
+    border: none;
+    border-radius: 8px;
+    background: #fff;
+  }
+  
+  /* Footer (reuse styling from previous) */
+  footer {
+    background-color: #6a1b9a;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    margin-top: 60px;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .contact-container {
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
+  
+    .map-box iframe {
+      height: 300px;
+    }
+  
+    .form-box iframe {
+      height: 1000px;
+    }
+  }
+  
+
+
+
+
+    /* FOOTER */
+    footer {
+        background-color: #6a1b9a;
+        color: white;
+        text-align: center;
+        padding: 20px 10px;
+      }
+      
+      /* RESPONSIVE */
+      @media (max-width: 768px) {
+        .program-box {
+          width: 90%;
+        }
+      }
+      

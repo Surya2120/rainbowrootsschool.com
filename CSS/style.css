@@ -1,0 +1,390 @@
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial Rounded MT Bold', sans-serif;
+  background-color: #fff;
+  color: #333;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* HEADER */
+.main-header {
+  background-color: #8224e3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  flex-wrap: nowrap;
+  min-height: 100px;
+}
+
+.logo-title {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  height: 80px; /* Adjusted for desktop */
+  margin-right: 15px;
+  background-color: white;
+  padding: 5px;
+  border-radius: 100px;
+}
+
+.main-title {
+  font-family: 'Fredoka One', cursive;
+  font-size: 40px; /* Adjusted for desktop */
+  color: #ffeb3b;
+  line-height: 1.1;
+}
+
+.sub-title {
+  font-size: 18px;
+  color: white;
+}
+
+/* NAVIGATION */
+.main-nav {
+  margin-top: 0;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.main-nav a {
+  color: white;
+  font-weight: 500;
+  padding: 12px 20px;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+  background-color: #ffeb3b;
+  color: #4b0082;
+}
+
+/* HERO SECTION */
+.hero-section {
+  position: relative;
+  text-align: center;
+  background-color: #fdf5ff;
+}
+
+.hero-content {
+  padding: 40px 20px;
+}
+
+.hero-title {
+  font-size: 56px; /* Adjusted for desktop */
+  font-family: 'Fredoka One', cursive;
+  color: #f9d342;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px #4b0082;
+}
+
+.hero-tagline {
+  font-size: 20px;
+  color: #4b0082;
+  margin-bottom: 20px;
+}
+
+.hero-photos {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+  z-index: 1;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.a4-photo {
+  width: 100%;
+  max-width: 1000px;
+  object-fit: cover;
+  border: 2px solid white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+}
+
+/* OUR PROGRAMS */
+.programs-section {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #f3e5f5;
+}
+
+.programs-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.program-box {
+  background-color: white;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  padding: 20px 30px;
+  font-weight: bold;
+  color: #6a1b9a;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.program-box:hover {
+  transform: scale(1.02);
+  background-color: #f9d342;
+}
+
+.program-box.selected {
+  background-color: #f9d342;
+  border: 2px solid #6a1b9a;
+}
+
+/* EXPERIENCE SECTION */
+.experience-section h2 {
+  font-size: 40px;
+  padding: 20px;
+  margin-bottom: 10px;
+  color: #000000;
+  background-color: #f3e5f5;
+  text-align: center;
+  border: 10px solid #6a1b9a;
+  border-radius: 8px;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.experience-section p {
+  font-size: 24px;
+  padding: 10px;
+  margin-bottom: 20px;
+  color: #000;
+  background-color: #fff;
+  text-align: center;
+}
+
+/* Slider */
+.gallery-slider-section {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.gallery-slider-section h2 {
+  font-size: 32px;
+  color: #4b0082;
+  margin-bottom: 30px;
+}
+
+.slider-container {
+  position: relative;
+  max-width: 90%;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.slider {
+  display: flex;
+  transition: transform 1s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  display: none;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.slide.active {
+  display: block;
+  opacity: 1;
+}
+
+.gallery-caption {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #444;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.progress-bar {
+  height: 5px;
+  background: #ddd;
+  width: 100%;
+  margin-top: 10px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.progress {
+  height: 100%;
+  background: #aa00ff;
+  width: 0%;
+  animation: progressAnim 5s linear infinite;
+  border-radius: 5px;
+}
+
+.slider-toggle-btn {
+  margin-top: 15px;
+  padding: 8px 20px;
+  background-color: #4b0082;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.slider-toggle-btn:hover {
+  background-color: #6a0dad;
+}
+
+@keyframes progressAnim {
+  0% { width: 0%; }
+  100% { width: 100%; }
+}
+
+/* ENQUIRY FORM */
+.enquiry-form {
+  padding: 40px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.enquiry-form h2 {
+  font-size: 24px;
+  color: #4b0082;
+  margin-bottom: 20px;
+}
+
+iframe {
+  max-width: 100%;
+  border: none;
+  border-radius: 8px;
+}
+
+.enquiry-form form {
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.enquiry-form input,
+.enquiry-form button {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+.enquiry-form button {
+  background-color: #ffcc00;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.enquiry-form button:hover {
+  background-color: #ffc107;
+}
+
+/* FOOTER */
+footer {
+  background-color: #6a1b9a;
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+}
+
+/* ANIMATIONS */
+.fadeInUp {
+  animation: fadeInUp 1s ease forwards;
+  opacity: 0;
+}
+
+@keyframes fadeInUp {
+  0% { transform: translateY(40px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .main-header {
+    padding: 15px 20px;
+  }
+
+  .logo-img {
+    height: 60px; /* Adjust logo size for mobile */
+  }
+
+  .main-title {
+    font-size: 28px; /* Adjust title font size for mobile */
+  }
+
+  .sub-title {
+    font-size: 16px; /* Adjust subtitle font size for mobile */
+  }
+
+  .hero-title {
+    font-size: 40px; /* Adjust hero title font size for mobile */
+  }
+
+  .hero-tagline {
+    font-size: 18px; /* Adjust hero tagline font size for mobile */
+  }
+
+  .hero-photos {
+    flex-direction: column;
+  }
+
+  .program-box {
+    width: 90%;
+    margin: 10px auto;
+  }
+
+  .experience-section h2 {
+    font-size: 28px; /* Adjust heading font size for mobile */
+  }
+
+  .experience-section p {
+    font-size: 18px; /* Adjust paragraph font size for mobile */
+  }
+
+  .slider {
+    flex-direction: column;
+  }
+}
