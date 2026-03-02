@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rainbow Roots - Day Care & Pre-School</title>
+  <link rel="stylesheet" href="CSS/style.css" />
+  <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet" />
+  <style>
+
+    
+    .gallery-slider-section {
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .gallery-slider-section h2 {
+      font-size: 32px;
+      color: #4b0082;
+      margin-bottom: 30px;
+    }
+
+    .slider-container {
+      position: relative;
+      max-width: 90%;
+      margin: 0 auto;
+      overflow: hidden;
+      border-radius: 15px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .slider {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .slide {
+      min-width: 100%;
+      display: none;
+      height: 400px;
+      object-fit: cover;
+      border-radius: 15px;
+    }
+
+    .slide.active {
+      display: block;
+    }
+
+    
+    .prev,
+    .next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(255, 255, 255, 0.7);
+      color: #333;
+      font-size: 28px;
+      padding: 10px 18px;
+      border: none;
+      cursor: pointer;
+      border-radius: 50%;
+      z-index: 10;
+    }
+
+    .prev:hover,
+    .next:hover {
+      background-color: #ffcc00;
+      color: #000;
+    }
+
+    .prev {
+      left: 10px;
+    }
+
+    .next {
+      right: 10px;
+    }
+
+    .gallery-caption {
+      margin-top: 20px;
+      font-size: 16px;
+      color: #444;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="main-header">
+    <div class="logo-title">
+      <img src="Desings/logo.png" alt="Rainbow Roots Logo" class="logo-img" />
+      <div class="text-block">
+        <h1 class="main-title">Rainbow Roots</h1>
+        <p class="sub-title">Day Care & Pre-School</p>
+      </div>
+    </div>
+<nav class="main-nav" id="mainNav">
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li class="dropdown">
+          <a href="services.html">Our Services</a>
+        <li><a href="about.html">About Us</a></li>
+        <!--<li><a href="beyond.html">Beyond the Academy</a></li>
+        <li><a href="facilities.html">Facilities</a></li>-->
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="hamburger" id="hamburger">
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
+  </header>
+
+  <!-- HERO BANNER -->
+
+<section class="hero-section">
+  <div class="hero-content fadeInUp">
+    <h1 class="hero-title">Rainbow Roots</h1>
+    <p class="hero-tagline">Where Little Feet Take Big Leaps!</p>
+  </div>
+
+  <!-- A4 Photos Only -->
+  <div class="hero-photos">
+    <img src="Photos/10x3 Banner 2.jpg" alt="A4 Photo 1" class="a4-photo" />
+    <img src="Photos/10x3 Banner 4_.jpg" alt="A4 Photo 2" class="a4-photo" />
+  </div>
+
+  <div class="section-divider">
+    <hr class="fancy-divider">
+  </div>
+</section>
+
+
+  <!-- Our Programs -->
+  <section class="programs-section fadeInUp">
+    <h2>Our Programs in Bangalore</h2>
+    <div class="programs-container">
+      <div class="program-box" onclick="highlightService('daycare'); location.href='services.html#daycare';">Day Care</div>
+      <div class="program-box" onclick="highlightService('playhome'); location.href='services.html#playhome';">Playhome</div>
+      <div class="program-box" onclick="highlightService('nursery'); location.href='services.html#nursery';">Nursery</div>
+      <div class="program-box" onclick="highlightService('lkg'); location.href='services.html#lkg';">LKG</div>
+      <div class="program-box" onclick="highlightService('ukg'); location.href='services.html#ukg';">UKG</div>
+    </div>
+  </section>
+
+  <!-- Experience Rainbow Roots -->
+  <section class="experience-section fadeInUp">
+    <h2>Experience Rainbow Roots</h2>
+    <p>
+      At Rainbow Roots, we provide a warm and nurturing environment where children can grow academically, socially, and emotionally.
+      Our experienced staff is dedicated to offering personalized care and attention.
+    </p>
+  </section>
+
+<!-- Photo Gallery Slider Section -->
+<section class="gallery-slider-section" id="gallery">
+  <h2>Life at Rainbow Roots</h2>
+  <div class="slider-container">
+    <div class="slider">
+      <img src="Photos/10x3 Banner 1.jpg" class="slide active" alt="Gallery Image 1">
+      <img src="Photos/10x3 Banner 2.jpg" class="slide" alt="Gallery Image 2">
+      <img src="Photos/10x3 Banner 3.jpg" class="slide" alt="Gallery Image 3">
+      <img src="Photos/10x3 Banner 4_.jpg" class="slide" alt="Gallery Image 4">
+    </div>
+    <div class="progress-bar">
+      <div class="progress"></div>
+    </div>
+  </div>
+  <button class="slider-toggle-btn" id="toggleSlider">Pause</button>
+  <p class="gallery-caption">At Rainbow Roots, children explore, play, and learn with joy in every corner. Here's a glimpse into our vibrant campus and day-to-day activities that nurture creativity and confidence.</p>
+</section>
+
+
+  <!-- Enquiry Form -->
+  <section class="enquiry-form">
+    <h2>Enquiry Form</h2>
+    <!-- Embed Google Form using iframe -->
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeh3pX69VTBFz7B1G6kbMvhlZ_iUdLld9GYE68cXoB1kk-paw/viewform?embedded=true" width="640" height="980" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Rainbow Roots. All rights reserved.</p>
+  </footer>
+
+  <!-- JS Libraries -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>

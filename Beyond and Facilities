@@ -1,0 +1,127 @@
+beyond
+.beyond-section {
+  padding: 60px 20px;
+  background-color: #fef6ff;
+  text-align: center;
+}
+
+.beyond-section .section-subtitle {
+  font-size: 18px;
+  color: #555;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+.beyond-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.beyond-box {
+  width: 250px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: zoomIn 0.6s ease;
+}
+
+.beyond-box img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.beyond-box h4 {
+  font-size: 20px;
+  color: #4b0082;
+  margin-bottom: 8px;
+  font-family: 'Fredoka One', cursive;
+}
+
+.beyond-box p {
+  font-size: 15px;
+  color: #444;
+}
+
+.beyond-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .beyond-box {
+    width: 90%;
+  }
+}
+
+Facilities
+.facilities-section {
+  padding: 60px 20px;
+  background-color: #fff7fd;
+  text-align: center;
+}
+
+.facilities-section .section-subtitle {
+  font-size: 18px;
+  color: #555;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+.facilities-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.facility-box {
+  width: 260px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeInUp 0.7s ease;
+}
+
+.facility-box img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.facility-box h4 {
+  font-size: 20px;
+  color: #4b0082;
+  margin-bottom: 8px;
+  font-family: 'Fredoka One', cursive;
+}
+
+.facility-box p {
+  font-size: 15px;
+  color: #444;
+}
+
+.facility-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .facility-box {
+    width: 90%;
+  }
+}
+
+
